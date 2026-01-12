@@ -21,7 +21,7 @@ Due to GitHub file size limits, the snapshot is split into multiple parts.
 wget https://github.com/yuanrunrunrun/spen-suh-fragfold/releases/download/env-v1/spen_stack.tar.gz.part_000
 wget https://github.com/yuanrunrunrun/spen-suh-fragfold/releases/download/env-v1/spen_stack.tar.gz.part_001
 # ... repeat for all parts
-wget https://github.com/yuanrunrunrun/spen-suh-fragfold/releases/download/env-v1/spen_stack.tar.gz.sha256
+
 
 # Reassemble
 cat spen_stack.tar.gz.part_* > spen_stack.tar.gz
