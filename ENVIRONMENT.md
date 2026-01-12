@@ -26,8 +26,6 @@ wget https://github.com/yuanrunrunrun/spen-suh-fragfold/releases/download/env-v1
 # Reassemble
 cat spen_stack.tar.gz.part_* > spen_stack.tar.gz
 
-# Verify integrity
-sha256sum -c spen_stack.tar.gz.sha256
 
 # Extract (must be extracted to root directory)
 sudo tar -xzf spen_stack.tar.gz -C /
@@ -54,7 +52,7 @@ Example command:
 ```bash
 nextflow run FragFold/nextflow/main.nf \
   -c FragFold/nextflow/nextflow.config \
-  -params-file FragFold/nextflow/params/spen01.yaml
+  -params-file FragFold/nextflow/params/spen_suh.yaml
 ```
 
 ```
