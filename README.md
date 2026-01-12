@@ -41,3 +41,8 @@ model.
 ## Citation
 If you use this repository, please cite:
 [Manuscript reference or preprint placeholder]
+
+
+## Reproducible environment
+A full runnable environment snapshot is available under
+**GitHub Releases (env-v1)**. See `ENVIRONMENT.md` for details.

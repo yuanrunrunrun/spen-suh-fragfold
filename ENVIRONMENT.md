@@ -32,3 +32,34 @@ sha256sum -c spen_stack.tar.gz.sha256
 # Extract (must be extracted to root directory)
 sudo tar -xzf spen_stack.tar.gz -C /
 
+
+## Activate environment
+
+```bash
+source /root/miniconda3/etc/profile.d/conda.sh
+conda activate fragfold
+```
+
+## Hardware requirements
+
+* GPU: NVIDIA RTX 3090 / 4090 or equivalent
+* VRAM: ≥24 GB recommended
+* Disk space: ≥100 GB free
+* OS: Linux (tested on Ubuntu 22.04)
+
+## Re-running the pipeline
+
+Example command:
+
+```bash
+nextflow run FragFold/nextflow/main.nf \
+  -c FragFold/nextflow/nextflow.config \
+  -params-file FragFold/nextflow/params/spen01.yaml
+```
+
+```
+
+---
+
+
+
